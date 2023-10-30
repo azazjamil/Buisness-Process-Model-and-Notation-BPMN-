@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="browserTitle">Pseudo</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      integrity="sha512-0OCvzZyRsIJ9Rg7O1S+Wf9ucukmVhyOg3h5eBG05aeH4NjG78fCEaEX3ofvndmukzENiX24fK5X/jPr6Y8yIdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      integrity="sha512-L/EyzxvZCddd652hKB4w2gEaZgCZSOaH0Ia6JoEGysTu27VnWvej5ipuBnru/iDhPWMO0AvwiVd0HHVUHWeDRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.7.3.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"
+      integrity="sha512-An4a3FEMyR5BbO9CRQQqgsBscxjM7uNNmccUSESNVtWn53EWx5B9oO7RVnPvPG6EcYcYPp0Gv3i/QQ4KUzB5WA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script id="exampleVOIDJson" type="application/json">
+      {
+        "process": {
+          "info": {
+            "cols": "6",
+            "name": "New",
+            "rows": "3",
+            "version": "1",
+            "description": "Initial, empty process.",
+            "author": "drueffler@gmail.com"
+          },
+          "sequence": {
+            "r1c1": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r1c2": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r1c3": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r1c4": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r1c5": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r1c6": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c1": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c2": {
+              "BPMN": "START",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "E",
+              "task": "Just do it!",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c3": {
+              "BPMN": "SEQUENCE",
+              "in": "W",
+              "out": "E",
+              "task": "",
+              "NO": "",
+              "YES": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c4": {
+              "BPMN": "SEQUENCE",
+              "in": "W",
+              "out": "E",
+              "task": "",
+              "NO": "",
+              "YES": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c5": {
+              "BPMN": "STOP",
+              "NO": "",
+              "YES": "",
+              "in": "W",
+              "out": "0",
+              "task": "Done.",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r2c6": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c1": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c2": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c3": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c4": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c5": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            },
+            "r3c6": {
+              "BPMN": "VOID",
+              "NO": "",
+              "YES": "",
+              "in": "0",
+              "out": "0",
+              "task": "",
+              "text1": "",
+              "text2": "",
+              "text3": "",
+              "text4": "",
+              "text5": "",
+              "text6": "",
+              "option1": "",
+              "option2": "",
+              "option3": ""
+            }
+          },
+          "settings": {
+            "browserTitle": "Go For it!",
+            "fontSize": "3",
+            "logoUrl": "https://bit.ly/p_bpmn_air",
+            "tileSize": "270",
+            "tilebackgroundColor1": "#ee6e73",
+            "tilebackgroundColor2": "#26a69a",
+            "titleBarTitle": "Step by step.",
+            "verbose": "1"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <svg
+      id="bpmnSymbols"
+      xmlns="http://www.w3.org/2000/svg"
+      width="200"
+      height="200"
+      style="display: none"
+    ></svg>
+
+    <header class="page-content">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="https://airtable.com/shrqcGSEdxQzNNlWM" target="_blank"
+            ><img
+              id="navLogo"
+              src="https://bit.ly/3JfgBNf"
+              class="left"
+              style="height: 100%"
+              title="goto AIRTABLE process model base"
+          /></a>
+          <a id="titleBarTitle" href="#" class="brand-logo center">BPMN</a>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <ul class="tabs">
+        <li class="tab col s3">
+          <a href="#run-panel">RUN</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#log-panel">EDIT</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#model-panel">MODEL</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#settings-panel">SETTINGS</a>
+        </li>
+        <li class="tab col s3">
+          <a href="#info-panel">Info</a>
+        </li>
+      </ul>
+      <!-- Add this div for the ezi toast popup -->
+      <div id="eziToast" class="ezi-toast">URL copied</div>
+
+      <div class="tooltip-btn" data-tooltip="Share Process">
+        <svg
+          id="copy-button"
+          width="24px"
+          height="24px"
+          class="v1262d"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 16c-.79 0-1.5.31-2.03.81L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.53.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.48.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.05 4.12c-.05.22-.09.45-.09.69 0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3zm0-12c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
+          ></path>
+        </svg>
+      </div>
+      <div>
+        <div class="hamburger" data-tooltip="View Activities">
+          <svg
+            class="burgerIcon"
+            data-tooltip="View Activities"
+            width="24px"
+            height="24px"
+            class="v1262d"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zM4 16V4h16v12H4z"
+            ></path>
+          </svg>
+        </div>
+        <div class="menu">
+          <div class="close">
+            <svg
+              class="cross"
+              version="1.0"
+              xmlns="http://www.w3.org/2000/svg"
+              width="472.000000pt"
+              height="444.000000pt"
+              viewBox="0 0 472.000000 444.000000"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <metadata>
+                Created by potrace 1.16, written by Peter Selinger 2001-2019
+              </metadata>
+              <g
+                transform="translate(0.000000,444.000000) scale(0.100000,-0.100000)"
+                fill="#000000"
+                stroke="none"
+              >
+                <path
+                  d="M42 4431 c3 -9 290 -391 1306 -1738 l341 -452 -821 -1088 c-452 -598
+-832 -1103 -846 -1120 l-24 -33 563 1 564 0 585 810 584 809 71 0 70 0 585
+-810 585 -810 558 0 c306 0 557 3 557 8 0 4 -378 508 -841 1120 -590 781 -838
+1117 -831 1125 5 7 380 500 832 1097 l822 1085 -553 3 -554 2 -22 -27 c-13
+-15 -274 -373 -580 -795 l-558 -767 -70 0 -70 0 -579 794 -579 795 -549 0
+c-330 0 -548 -4 -546 -9z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="sidebar-content"></div>
+        </div>
+      </div>
+      <div id="run-panel" class="content-panel is-active center-align">
+        <div id="loader">
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+          <div class="circle">
+            <div></div>
+          </div>
+        </div>
+        <!--  - - - - - - - - - - - - - - - - - - - - - - R U N -->
+        <h1 class="center-align" id="Process-Name">Capre Diem</h1>
+        <div id="loop">
+          <h4 class="center-align" id="callToAction">Press the button!</h4>
+          <div class="btn-div">
+            <div id="btn-div-0" class="slider-div">
+              <button
+                class="btn center-align"
+                title="a"
+                id="b_one"
+                disabled
+                data-next-step=""
+                style="background-color: green; display: true; width: 300px"
+              >
+                R
+              </button>
+              <!-- none or true -->
+              <button
+                class="btn center-align"
+                title="b"
+                disabled
+                id="b_two"
+                data-next-step=""
+                style="background-color: red; display: true; width: 300px"
+              >
+                G
+              </button>
+              <button
+                class="btn center-align"
+                title="c"
+                disabled
+                id="b_three"
+                data-next-step=""
+                style="background-color: blue; display: true; width: 300px"
+              >
+                B
+              </button>
+            </div>
+          </div>
+          <div class="timer animatable">
+            <svg>
+              <circle cx="50%" cy="50%" r="45" />
+              <circle cx="50%" cy="50%" r="45" pathLength="1" />
+              <text x="50" y="50" text-anchor="middle">
+                <tspan id="timeLeft"></tspan>
+              </text>
+              <text x="50" y="70" text-anchor="middle">seconds</text>
+            </svg>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <table id="inArena1">
+            <tbody>
+              <tr>
+                <td></td>
+                <td id="canvasRoot0">
+                  <table id="bpmnStatus" class="canvas"></table>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="log-panel" class="content-panel">
+        <!--  - - - - - - - - - - - - - - - - - - - - E D I T -->
+        <h1 class="center-align" id="Process-Name" contenteditable>
+          Capre Diem
+        </h1>
+        <div style="text-align: center; margin-bottom: 20px">
+          <button id="btn-save" class="btn" style="background: blue">
+            SAVE
+          </button>
+        </div>
+        <table id="inArena">
+          <tbody>
+            <tr>
+              <td></td>
+              <td id="canvasRoot1">
+                <table id="bpmnCanvas" class="canvas"></table>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <form id="fieldOfInputs" style="text-align: center">
+          <div class="container" style="text-align: left">
+            <div
+              class="column column-1"
+              style="width: 25%; display: inline-block"
+            >
+              <label for="formC1R1">Current Field:</label>
+              <input
+                type="text"
+                id="formC1R1"
+                name="formC1R1"
+                style="width: 100%"
+              />
+              <label for="formC1R2">Text 1:</label>
+              <input
+                type="text"
+                id="formC1R2"
+                name="formC1R2"
+                style="width: 100%"
+              />
+              <label for="formC1R3">Text 4</label>
+              <input
+                type="text"
+                id="formC1R3"
+                name="formC1R3"
+                style="width: 100%"
+              />
+              <label for="formC1R4">Option 1 Button***</label>
+              <input
+                type="text"
+                id="formC1R4"
+                name="formC1R4"
+                style="width: 100%"
+              />
+            </div>
+            <div
+              class="column column-2"
+              style="width: 25%; display: inline-block"
+            >
+              <label for="formC2R1">BPMN Symbol:</label>
+              <input
+                type="text"
+                id="formC2R1"
+                name="formC2R1"
+                style="width: 100%"
+              />
+              <label for="formC2R2">Text 2:</label>
+              <input
+                type="text"
+                id="formC2R2"
+                name="formC2R2"
+                style="width: 100%"
+              />
+              <label for="formC2R3">Text 5:</label>
+              <input
+                type="text"
+                id="formC2R3"
+                name="formC2R3"
+                style="width: 100%"
+              />
+              <label for="Option 2 Button">Option 2 Button***</label>
+              <input
+                type="text"
+                id="formC2R4"
+                name="Option 2 Button"
+                style="width: 100%"
+              />
+            </div>
+            <div
+              class="column column-3"
+              style="width: 25%; display: inline-block"
+            >
+              <label for="formC3R1">Task:*</label>
+              <input
+                type="text"
+                id="formC3R1"
+                name="formC3R1"
+                style="width: 100%"
+              />
+              <label for="formC3R2">Text 3:</label>
+              <input
+                type="text"
+                id="formC3R2"
+                name="formC3R2"
+                style="width: 100%"
+              />
+              <label for="formC3R3">Text 6:</label>
+              <input
+                type="text"
+                id="formC3R3"
+                name="formC3R3"
+                style="width: 100%"
+              />
+              <label for="formC3R4">Option 3 Button***</label>
+              <input
+                type="text"
+                id="formC3R4"
+                name="formC3R4"
+                style="width: 100%"
+              />
+            </div>
+            <div
+              class="column column-4"
+              style="width: 25%; display: inline-block"
+            >
+              <label for="formC4R1">Inbound (N, E, S, W, 0)**:</label>
+              <input
+                type="text"
+                id="formC4R1"
+                name="formC4R1"
+                style="width: 100%"
+              />
+              <label for="formC4R2">Outbound (N, E, S, W, 0)*:</label>
+              <input
+                type="text"
+                id="formC4R2"
+                name="formC4R2"
+                style="width: 100%"
+              />
+              <label for="formC4R3">Yes Button:****</label>
+              <input
+                type="text"
+                id="formC4R3"
+                name="formC4R3"
+                style="width: 100%"
+              />
+              <label for="formC4R4">NO Button:****</label>
+              <input
+                type="text"
+                id="formC4R4"
+                name="formC4R4"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <input id="saveFields" type="button" class="btn" value="Save" />
+          <p>
+            <br />
+            * &lt;Button Label&gt; - For XORSPLIT with 3 Outbounds see Option
+            Buttons, For XORSPLIT with 2 Outbounds see Yes-, No-Buttons - Others
+            use "Task" <br />
+            ** &lt;Direction (In- or Outbound)&gt::= N|E|S|W|0 // N North, E
+            East, S South, W West, 0 Zero (no in- or output) <br />
+            *** &lt;Option1-, Option2-,
+            Option3-Button&gt;::=&lt;Direction-Outbound&gt;:&lt;Button Label&gt;
+            <br />
+            **** &lt;Yes-, No-Button&gt;::=&lt;Direction-Outbound&gt;:&lt;Button
+            Label&gt; <br />
+          </p>
+        </form>
+      </div>
+      <div id="model-panel">
+        <!--  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - M O D E L -->
+        <h1 class="center-align" id="Process-Name">Capre Diem</h1>
+        <table id="Model" style="background-color: #f1f1f1">
+          <tbody>
+            <tr>
+              <td style="width: 2%"></td>
+              <td style="height: 0%">
+                <div style="position: relative">
+                  <span
+                    style="
+                      position: absolute;
+                      top: -20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      font-size: 12px;
+                      font-weight: bold;
+                    "
+                    >EDIT</span
+                  >
+                </div>
+                <div id="clip07" class="clipboard-icon">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    cursor="pointer"
+                  >
+                    <path
+                      d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                </div>
+                <textarea id="json-input" style="width: 100%"></textarea>
+              </td>
+              <td
+                id="settingFields"
+                style="
+                  width: 0%;
+                  border: 20px solid #f1f1f1;
+                  height: 8%;
+                  vertical-align: top;
+                "
+              >
+                <div style="height: 0%">
+                  <button
+                    class="btn"
+                    id="EXAMPLE-S"
+                    style="width: 140px; margin-top: 10px"
+                  >
+                    &lt;&lt;EXAMPLE S
+                  </button>
+                  <button
+                    class="btn"
+                    id="EXAMPLE-M"
+                    style="width: 145px; margin-top: 10px"
+                  >
+                    &lt;&lt;EXAMPLE M
+                  </button>
+                  <button
+                    class="btn"
+                    id="EXAMPLE-L"
+                    style="width: 160px; margin-top: 10px"
+                  >
+                    &lt;&lt;EXAMPLE L
+                  </button>
+                  <button
+                    class="btn"
+                    id="EXAMPLE-XXL"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;EXAMPLE XXL
+                  </button>
+                  <button
+                    class="btn"
+                    id="EXAMPLE-ANDSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;EXAMPLE ANDSPLIT
+                  </button>
+                  <button
+                    class="btn"
+                    id="HUGE-ANDSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;HUGE ANDSPLIT
+                  </button>
+                  <button
+                    class="btn"
+                    id="Open-ANDSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;Open ANDSPLIT
+                  </button>
+                  <button
+                    class="btn"
+                    id="Closed-ANDSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;Closed ANDSPLIT
+                  </button>
+                  <button
+                    class="btn"
+                    id="TestCase-XORSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;Test: XOR
+                  </button>
+                  <button
+                    class="btn"
+                    id="TestCase-ANDSPLIT"
+                    style="width: 190px; margin-top: 10px"
+                  >
+                    &lt;&lt;Test: AND
+                  </button>
+                  <button
+                    class="btn"
+                    id="ShowCurrent"
+                    style="
+                      width: 190px;
+                      margin-top: 10px;
+                      background-color: red;
+                      color: white;
+                    "
+                  >
+                    &lt;&lt;Show Current
+                  </button>
+                  <button
+                    class="btn"
+                    id="ACTIVATE"
+                    style="
+                      width: 200px;
+                      margin-top: 10px;
+                      background-color: blue;
+                      color: white;
+                    "
+                  >
+                    DEPLOY >>
+                  </button>
+                  <button
+                    class="btn"
+                    id="BEAUTIFY"
+                    style="
+                      width: 120px;
+                      margin-top: 10px;
+                      background-color: black;
+                      color: white;
+                    "
+                    onclick="beautifyJson()"
+                  >
+                    &lt;&lt;BEAUTIFY
+                  </button>
+                  <button
+                    class="btn"
+                    id="MINIFY"
+                    style="
+                      width: 120px;
+                      margin-top: 10px;
+                      background-color: black;
+                      color: white;
+                    "
+                    onclick="minifyJson()"
+                  >
+                    &lt;&lt;MINIFY
+                  </button>
+                  <button
+                    class="btn"
+                    id="VERIFY"
+                    style="
+                      width: 120px;
+                      margin-top: 10px;
+                      background-color: black;
+                      color: white;
+                    "
+                    onclick="verifyJson()"
+                  >
+                    &lt;&lt;VERIFY
+                  </button>
+                </div>
+              </td>
+              <td style="height: 100%">
+                <div style="position: relative">
+                  <span
+                    style="
+                      position: absolute;
+                      top: -20px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      font-size: 12px;
+                      font-weight: bold;
+                    "
+                    >DEPLOYED</span
+                  >
+                </div>
+                <div id="clip08" class="clipboard-icon">
+                  <svg
+                    width="40px"
+                    height="40px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    cursor="pointer"
+                  >
+                    <path
+                      d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                      fill="#212121"
+                    />
+                    <path
+                      d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                      fill="#212121"
+                    />
+                  </svg>
+                </div>
+                <textarea id="json-output" style="width: 100%"></textarea>
+              </td>
+              <td style="width: 2%"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="settings-panel" class="content-panel">
+        <!-- - - - - - - - - - - - - - - - - - -  S E T T I N G S -->
+        <h1 class="center-align" id="Process-Name">Capre Diem</h1>
+        <div style="text-align: center">
+          <button id="update-btn" class="btn">Update</button>
+        </div>
+        <table style="margin: 0 auto">
+          <tr>
+            <td></td>
+            <td>
+              <div class="content-panel" style="text-align: center">
+                <h4 id="Cvs">Look &amp; Feel</h4>
+                <div class="row">
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="browser-title"
+                        value="Pseudo"
+                        style="width: 200px"
+                      />
+                      <label for="browser-title">Browser Title</label>
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="title-bar-title"
+                        value="BPMN"
+                        style="width: 200px"
+                      />
+                      <label for="title-bar-title">Title Bar Title</label>
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="logo-url"
+                        value="https://bit.ly/3JfgBNf"
+                        style="width: 200px"
+                      />
+                      <label for="logo-url">Logo URL</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="width: 50%">
+              <div class="content-panel" style="text-align: center">
+                <h4 id="Cvs1">Canvas</h4>
+                <div class="row">
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="number"
+                        id="tileSize"
+                        value="200"
+                        style="width: 200px"
+                      />
+                      <label for="tileSize">Tilesize(px)</label>
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="color"
+                        id="tilebackgroundColor1"
+                        value="#FF0000"
+                        style="width: 200px"
+                      />
+                      <label for="tilebackgroundColor1"
+                        >_ __________________________ Background Tile Color
+                        1</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="color"
+                        id="tilebackgroundColor2"
+                        value="#FF0000"
+                        style="width: 200px"
+                      />
+                      <label class="color-label" for="tilebackgroundColor2"
+                        >_ ______________________________ Background Tile Color
+                        Tile 2</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="width: 50%">
+              <div class="content-panel" style="text-align: center">
+                <h4 id="Prc">Process</h4>
+                <div class="row">
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="processName"
+                        value="Do this and that"
+                        style="width: 200px"
+                      />
+                      <label for="processName">Process Name</label>
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="number"
+                        id="fontSize"
+                        min="1"
+                        max="9"
+                        step="1"
+                        value="3"
+                        style="width: 200px"
+                      />
+                      <label for="fontSize">Fontsize</label>
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="number"
+                        id="toggleSwitchSymbolTypeOnOff"
+                        min="0"
+                        max="1"
+                        step="1"
+                        value="1"
+                        style="width: 200px"
+                      />
+                      <label for="toggleSwitchSymbolTypeOnOff">
+                        Type:On(1)/Off(0)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="width: 50%">
+              <div class="content-panel" style="text-align: center">
+                <h4 id="NewLabel">Parallel Path Colors</h4>
+                <div class="row">
+                  <div class="col s4">
+                    <div class="input-field">
+                      <!-- <label for="path-color1">Path Color 1</label> -->
+                      <input
+                        type="color"
+                        id="path-color1"
+                        value="#001EFF"
+                        style="width: 200px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="color"
+                        id="path-color2"
+                        value="#FF0000"
+                        style="width: 200px"
+                      />
+                      <!-- <label for="path-color2">Path Color 2</label> -->
+                    </div>
+                  </div>
+                  <div class="col s4">
+                    <div class="input-field">
+                      <input
+                        type="color"
+                        id="path-color3"
+                        value="#2B6A2A"
+                        style="width: 200px"
+                      />
+                      <!-- <label class="color-label" for="path-color3">Path Color 3</label> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div id="info-panel" class="content-panel">
+        <!--  - - - - - - - - - - - - - - - - - - - I N F O -->
+        <h1 class="center-align" id="Tooling">Tooling</h1>
+        <div class="table-container">
+          <table id="infoArena">
+            <tbody>
+              <tr>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool1_head">tooling</h4>
+                  <div id="clip01" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool2_head">tooling</h4>
+                  <div id="clip02" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool3_head">tooling</h4>
+                  <div id="clip03" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td id="canvasRoot2">
+                  <table id="tool1"></table>
+                </td>
+                <td id="canvasRoot3">
+                  <table id="tool2"></table>
+                </td>
+                <td id="canvasRoot4">
+                  <table id="tool3"></table>
+                </td>
+              </tr>
+              <tr style="height: 200px"></tr>
+              <tr>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool4_head">tooling</h4>
+                  <div id="clip04" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool5_head">tooling</h4>
+                  <div id="clip05" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+                <td id="aRoot">
+                  <h4 class="center-align" id="tool6_head">tooling</h4>
+                  <div id="clip06" class="clipboard-icon">
+                    <svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      cursor="pointer"
+                    >
+                      <path
+                        d="M13.75 2C14.9089 2 15.8631 2.8761 15.9865 4.00209C15.9864 4.0012 15.9863 4.00032 15.9862 3.99944L17.75 4C18.9926 4 20 5.00736 20 6.25V13.7108C19.9836 12.9693 19.4932 12.2915 18.7438 12.0711C18.6627 12.0472 18.5813 12.0295 18.5 12.0177V6.25C18.5 5.83579 18.1642 5.5 17.75 5.5L15.621 5.5002C15.2173 6.1031 14.53 6.5 13.75 6.5H10.25C9.46997 6.5 8.78264 6.10307 8.379 5.50016L6.25 5.5C5.83579 5.5 5.5 5.83579 5.5 6.25V19.75C5.5 20.1642 5.83579 20.5 6.25 20.5H11.6308L12.442 21.4127C12.785 21.7985 13.2604 21.9968 13.739 22H6.25C5.00736 22 4 20.9926 4 19.75V6.25C4 5.00736 5.00736 4 6.25 4L8.01379 3.99944C8.13841 2.87472 9.09205 2 10.25 2H13.75ZM15.9948 4.09595L16 4.25C16 4.19822 15.9983 4.14685 15.9948 4.09595ZM13.75 3.5H10.25C9.83579 3.5 9.5 3.83579 9.5 4.25C9.5 4.66421 9.83579 5 10.25 5H13.75C14.1642 5 14.5 4.66421 14.5 4.25C14.5 3.83579 14.1642 3.5 13.75 3.5Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.0001 13.75C19.0001 13.82 18.9902 13.8911 18.9695 13.9616L16.4695 22.4616C16.3526 22.859 15.9357 23.0864 15.5383 22.9695C15.1409 22.8526 14.9136 22.4357 15.0304 22.0383L17.5304 13.5383C17.6473 13.1409 18.0642 12.9136 18.4616 13.0304C18.5091 13.0444 18.5543 13.0627 18.5966 13.0847C18.7057 13.1414 18.7967 13.223 18.8645 13.32C18.9514 13.4444 19.0002 13.5943 19.0001 13.75Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M11.1894 18.4983C10.9369 18.2141 10.9369 17.7859 11.1894 17.5017L13.1894 15.2517C13.4646 14.9421 13.9387 14.9143 14.2483 15.1895C14.5579 15.4646 14.5857 15.9387 14.3106 16.2483L12.7535 18L14.3106 19.7517C14.5857 20.0613 14.5579 20.5354 14.2483 20.8106C14.1053 20.9376 13.9273 21.0001 13.75 21C13.5433 21 13.3376 20.9149 13.1894 20.7483L11.1894 18.4983Z"
+                        fill="#212121"
+                      />
+                      <path
+                        d="M19.7517 20.8105C19.4421 20.5354 19.4143 20.0613 19.6894 19.7517L21.2465 18L19.6894 16.2483C19.4143 15.9387 19.4421 15.4646 19.7517 15.1894C20.0613 14.9142 20.5354 14.9421 20.8106 15.2517L22.8106 17.5017C23.0631 17.7859 23.0631 18.2141 22.8106 18.4983L20.8106 20.7483C20.5354 21.0579 20.0613 21.0857 19.7517 20.8105Z"
+                        fill="#212121"
+                      />
+                    </svg>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td id="canvasRoot5">
+                  <table id="tool4"></table>
+                </td>
+                <td id="canvasRoot6">
+                  <table id="tool5"></table>
+                </td>
+                <td id="canvasRoot7">
+                  <table id="tool6"></table>
+                </td>
+              </tr>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="svgScript.js"></script>
+    <script src="js_before.js"></script>
+    <script src="js_speeddButton.js"></script>
+    <script src="js_after.js"></script>
+  </body>
+</html>
